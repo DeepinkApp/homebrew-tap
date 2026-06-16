@@ -4,9 +4,9 @@
 cask "deepink" do
   version "0.2.0"
   sha256 "ecf599909828e7e82f3fc4a5599577cb5c07ad9fe4f4d858d37ffb2a03d8754c"
-  url
-    "https://github.com/DeepinkApp/deepink/releases/download/v#{version}/deepink-darwin-arm64-#{version}.zip", verified: "github.com/DeepinkApp/deepink/"
 
+  url "https://github.com/DeepinkApp/deepink/releases/download/v#{version}/deepink-darwin-arm64-#{version}.zip",
+      verified: "github.com/DeepinkApp/deepink/"
   name "deepink"
   desc "Better place for your notes"
   homepage "https://deepink.app/"
