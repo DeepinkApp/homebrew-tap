@@ -30,7 +30,7 @@ jobs:
         run: |
           VERSION="${{ inputs.version }}"
           VERSION="${VERSION#v}"
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
 
       - name: Download release & compute SHA256
         id: sha
@@ -41,7 +41,7 @@ jobs:
           curl -L --fail -o app.zip "$URL"
           SHA=$(shasum -a 256 app.zip | awk '{print $1}')
 
-          echo "sha256=$SHA" >> $GITHUB_OUTPUT
+          echo "sha256=$SHA" >> "$GITHUB_OUTPUT"
 
       - name: Update cask
         run: |
