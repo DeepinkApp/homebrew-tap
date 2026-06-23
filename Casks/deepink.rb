@@ -2,8 +2,8 @@
 #                https://docs.brew.sh/Adding-Software-to-Homebrew#cask-stanzas
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 cask "deepink" do
-  version "0.2.0"
-  sha256 "ecf599909828e7e82f3fc4a5599577cb5c07ad9fe4f4d858d37ffb2a03d8754c"
+  version "0.2.1"
+  sha256 "4c5bdbc4d3a0a79b0bfc8e682909a9aeaaeb4b535ff42390783413954dc1599e"
 
   url "https://github.com/DeepinkApp/deepink/releases/download/v#{version}/deepink-darwin-arm64-#{version}.zip",
       verified: "github.com/DeepinkApp/deepink/"
